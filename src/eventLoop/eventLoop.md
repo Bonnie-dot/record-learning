@@ -10,7 +10,7 @@
 - 异步（asynchronous）：不进入主线程、而进入"任务队列"（task queue）的任务，只有"任务队列"通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。
   常见的异步包括XHR、dom、计时器等等。
 ### Event Loop
-<div style="text-align: center"><img src="https://github.com/chenqing2016/learn-javascript/blob/master/src/eventLoop/img/eventLoop2.png" width="500"/></div>
+<div align="center"><img src="https://github.com/chenqing2016/learn-javascript/blob/master/src/eventLoop/img/eventLoop2.png" width="500"/></div>
   首先先搞清楚图上面的画的意思，我们看到在主进程中有栈和堆的存在。我们需要来理解一下栈和堆分别代表什么。
 这个要从内存角度理解，主要目的是用来存放数据的一块内存区域。
 - stack是有结构的，每个区块按照一定次序存放，可以明确知道每个区块的大小，后进先出（last-in-first-out），
@@ -22,7 +22,7 @@
 
 👆这个图可以和👇这个图配合👀，就能理解运行机制啦。
 
-<div style="text-align: center;"><img src="https://github.com/chenqing2016/learn-javascript/blob/master/src/eventLoop/img/eventLoop.png" width="500"/></div>
+<div align="center"><img src="https://github.com/chenqing2016/learn-javascript/blob/master/src/eventLoop/img/eventLoop.png" width="500"/></div>
 
 
 参考资料

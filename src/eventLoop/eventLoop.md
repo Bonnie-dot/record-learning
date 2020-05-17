@@ -16,6 +16,7 @@
 <div align="center"><img src="https://github.com/chenqing2016/learn-javascript/blob/master/src/eventLoop/img/eventLoop2.png" width="500"/></div>
   首先先搞清楚图上面的画的意思，我们看到在主进程中有栈和堆的存在。我们需要来理解一下栈和堆分别代表什么。
 这个要从内存角度理解，主要目的是用来存放数据的一块内存区域。
+
 - stack是有结构的，每个区块按照一定次序存放，可以明确知道每个区块的大小，后进先出（last-in-first-out），
 在js中比如基本类型的数据就存放在这里，基本数据类型的数据占空间固定，按值访问；
 - heap是没有结构的，数据可以任意存放。引用类型的数据是存放在堆中的，因为大小不固定，但是实际的内存地址是存放在
